@@ -1,0 +1,136 @@
+2.1)HTML
+
+a)HTML basics
+
+📅 Last Updated: 17 Jul, 2025**
+
+🔹 What is HTML?
+
+ HTML (HyperText Markup Language) is the **standard language** for creating and structuring web pages.
+ Defines layout using **elements and tags** for text, images, links, and multimedia.
+ Used in **95%+ of all websites**, making it essential for modern web development.
+ Core components: **tags, attributes, elements, and document structure**.
+
+
+ 🔹 HTML Basic Document & Structure
+
+ Every document starts with `<!DOCTYPE html>` → defines document type.
+ Main structural tags:
+
+   `<html>` → root element.
+   `<head>` → contains metadata (title, stylesheets, meta tags).
+   `<title>` → defines page title (appears in browser tab).
+   `<body>` → contains visible content (text, images, videos, links).
+
+Example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+</head>
+<body>
+  <p>GeeksforGeeks is an online study platform</p>
+</body>
+</html>
+```
+
+---
+
+🔹 HTML Headings
+
+ Tags: `<h1>` to `<h6>` (largest to smallest).
+ Used to create a **hierarchy of text importance**.
+
+Syntax Example:
+
+```html
+<h1>Heading 1</h1>
+<h6>Heading 6</h6>
+```
+
+---
+
+🔹 HTML Paragraphs & Breaks
+
+ `<p>` → defines a paragraph.
+`<br>` → inserts a line break (empty tag).
+
+Example:
+
+```html
+<p>HTML stands for HyperText Markup Language.<br>
+It is used to design web pages.<br></p>
+```
+
+---
+
+### 🔹 HTML Horizontal Line
+
+* `<hr>` → creates a horizontal rule to divide sections.
+* Empty tag, no closing required.
+
+**Example:**
+
+```html
+<p>Content above</p>
+<hr>
+<p>Content below</p>
+```
+
+---
+
+### 🔹 HTML Comments
+
+* Used for notes, explanations, or disabling code.
+* Not displayed in browser.
+
+**Syntax:**
+
+```html
+<!-- Single-line comment -->
+<!-- 
+  Multi-line 
+  comment 
+-->
+```
+
+**Best Practices:**
+
+* Keep comments concise and relevant.
+* Avoid over-commenting obvious code.
+* Update comments when code changes.
+
+---
+
+### 🔹 HTML Images
+
+* `<img>` → inserts an image.
+* `src` attribute defines the image source.
+* Can include `alt` (alternative text) for accessibility.
+
+**Syntax Example:**
+
+```html
+<img src="geeks.png" alt="GeeksforGeeks Logo">
+```
+
+---
+
+### 🔹 Viewing HTML Source Code
+
+1. **Entire page**: `Ctrl + U` or right-click → *View Page Source*.
+2. **Specific element**: Right-click → *Inspect*. Allows editing & testing live changes.
+
+---
+
+### 🔹 Conclusion
+
+* HTML is the **foundation of web development**.
+* Learning basic tags and structure lets you build functional, organized web pages.
+* With practice, you can create interactive and optimized websites.
+
+---
