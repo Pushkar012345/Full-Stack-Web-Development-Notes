@@ -134,3 +134,692 @@ It is used to design web pages.<br></p>
 * With practice, you can create interactive and optimized websites.
 
 ---
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+b)semantic vs non-semantic
+
+**Semantic vs Non-Semantic Elements (HTML)**
+
+**Semantic Elements**
+
+* Have a *meaning* (describe content clearly).
+* Help both browsers and developers understand the role of the content.
+* Examples: `<article>`, `<section>`, `<header>`, `<footer>`, `<nav>`, `<table>`, `<form>`.
+* Improve SEO and accessibility.
+
+**Non-Semantic Elements**
+
+* Do *not* have inherent meaning.
+* Only act as containers without describing the content inside.
+* Examples: `<div>`, `<span>`.
+* Require attributes like `class` or `id` for styling/structure.
+
+**Key Differences**
+
+| Semantic Elements              | Non-Semantic Elements          |
+| ------------------------------ | ------------------------------ |
+| Have meaning                   | Do not have meaning            |
+| Describe type/role of content  | Do not describe content        |
+| Useful for SEO & accessibility | Used mainly for styling/layout |
+| Examples: `<article>`, `<nav>` | Examples: `<div>`, `<span>`    |
+
+
+c)HTML Tages
+**HTML Tags A–Z (Quick Revision Notes)**
+
+* `<!DOCTYPE html>` → Defines HTML document type.
+
+* `<a>` → Hyperlink (anchor).
+
+* `<abbr>` → Abbreviation (tooltip with `title`).
+
+* `<acronym>` → Acronym (deprecated).
+
+* `<address>` → Contact info.
+
+* `<applet>` → Java applet (deprecated).
+
+* `<area>` → Clickable area in image map.
+
+* `<article>` → Independent article section.
+
+* `<aside>` → Sidebar / secondary content.
+
+* `<audio>` → Embed audio.
+
+* `<b>` → Bold (no extra importance).
+
+* `<base>` → Base URL for relative links.
+
+* `<bdi>` → Bi-directional isolation (text dir).
+
+* `<bdo>` → Bi-directional override.
+
+* `<blockquote>` → Long quotation.
+
+* `<body>` → Main page content.
+
+* `<br>` → Line break.
+
+* `<button>` → Clickable button.
+
+* `<canvas>` → Draw graphics via JS.
+
+* `<caption>` → Table caption.
+
+* `<cite>` → Work title (italic).
+
+* `<code>` → Code snippet.
+
+* `<col>` / `<colgroup>` → Column properties in table.
+
+* `<!-- … -->` → Comment.
+
+* `<data>` → Machine-readable value.
+
+* `<datalist>` → Options for autocomplete.
+
+* `<dd>` → Description in list.
+
+* `<del>` → Deleted text (strike).
+
+* `<details>` → Expand/collapse info.
+
+* `<dfn>` → Defining instance of term.
+
+* `<dialog>` → Dialog box / popup.
+
+* `<div>` → Generic container.
+
+* `<dl>` → Description list.
+
+* `<dt>` → Term in description list.
+
+* `<em>` → Emphasized text (italic).
+
+* `<embed>` → Embed external content.
+
+* `<fieldset>` → Group form elements.
+
+* `<figcaption>` → Caption for figure.
+
+* `<figure>` → Self-contained content (image/diagram).
+
+* `<footer>` → Page/footer section.
+
+* `<form>` → User input form.
+
+* `<h1>–<h6>` → Headings (largest to smallest).
+
+* `<head>` → Metadata container.
+
+* `<header>` → Intro content/header.
+
+* `<hgroup>` → Group of headings.
+
+* `<hr>` → Horizontal rule.
+
+* `<html>` → Root of HTML doc.
+
+* `<i>` → Italic (no emphasis).
+
+* `<iframe>` → Inline frame (embed page).
+
+* `<img>` → Image.
+
+* `<input>` → Input field.
+
+* `<ins>` → Inserted text.
+
+* `<kbd>` → Keyboard input text.
+
+* `<label>` → Label for form control.
+
+* `<legend>` → Caption for `<fieldset>`.
+
+* `<li>` → List item.
+
+* `<link>` → External resource (CSS).
+
+* `<main>` → Main unique content.
+
+* `<map>` → Image map container.
+
+* `<mark>` → Highlighted text.
+
+* `<meta>` → Metadata.
+
+* `<meter>` → Scalar measurement.
+
+* `<nav>` → Navigation links.
+
+* `<noscript>` → Alt for no JS.
+
+* `<object>` → Multimedia/embed.
+
+* `<ol>` → Ordered list.
+
+* `<optgroup>` → Grouped dropdown options.
+
+* `<option>` → Option in dropdown.
+
+* `<output>` → Output of calc/script.
+
+* `<p>` → Paragraph.
+
+* `<param>` → Param for `<object>`.
+
+* `<pre>` → Preformatted text.
+
+* `<progress>` → Task progress.
+
+* `<q>` → Short quotation.
+
+* `<rp>` → Fallback for ruby.
+
+* `<rt>` → Ruby text annotation.
+
+* `<ruby>` → Ruby annotation wrapper.
+
+* `<s>` → Strikethrough (no longer correct).
+
+* `<samp>` → Sample program output.
+
+* `<script>` → JS code.
+
+* `<section>` → Document section.
+
+* `<select>` → Dropdown list.
+
+* `<small>` → Smaller text.
+
+* `<source>` → Media source (audio/video).
+
+* `<span>` → Inline container.
+
+* `<strong>` → Strong importance (bold).
+
+* `<style>` → Internal CSS.
+
+* `<sub>` → Subscript text.
+
+* `<sup>` → Superscript text.
+
+* `<summary>` → Summary for `<details>`.
+
+* `<svg>` → Scalable vector graphics.
+
+* `<table>` → Table.
+
+* `<tbody>` → Table body.
+
+* `<td>` → Table cell.
+
+* `<template>` → Reusable HTML fragment.
+
+* `<tfoot>` → Table footer.
+
+* `<th>` → Table header cell.
+
+* `<thead>` → Table head.
+
+* `<time>` → Date/time.
+
+* `<title>` → Page title (browser tab).
+
+* `<tr>` → Table row.
+
+* `<track>` → Subtitles/tracks for media.
+
+* `<u>` → Underlined text.
+
+* `<ul>` → Unordered list.
+
+* `<var>` → Variable name.
+
+* `<video>` → Embed video.
+
+* `<wbr>` → Word break opportunity.
+
+* `<xmp>` → Preformatted text (deprecated).
+
+**Tip for Revision:**
+
+* Semantic tags → `<header>`, `<footer>`, `<section>`, `<article>`, `<nav>`, `<main>`.
+* Deprecated tags → `<applet>`, `<acronym>`, `<font>`, `<center>`, `<frame>`, `<big>`, `<strike>`, `<xmp>`.
+
+d)HTML Forms:
+
+### HTML Forms – Quick Revision
+
+**Definition**:
+
+* `<form>` is used to collect user input on web pages.
+* Supports fields like text, email, password, checkboxes, radio buttons, file upload, etc.
+* ~85% of websites use forms.
+
+**Basic Syntax**:
+
+```html
+<form>
+   <!-- form elements -->
+</form>
+```
+
+---
+
+### Important **Form Attributes**
+
+* **action** → URL where data is sent.
+* **method** → `get` (appended in URL) / `post` (secure, in body).
+* **target** → where response is displayed (`_blank`, `_self`, etc.).
+* **enctype** → data encoding when `post` is used (`multipart/form-data` for files).
+* **autocomplete** → on/off for autofill.
+* **novalidate** → disables validation.
+
+---
+
+### Key **Form Elements**
+
+* `<label>` → Defines label for input.
+* `<input>` → Collects data (various types).
+* `<button>` → Clickable button.
+* `<select>` & `<option>` → Dropdown menu.
+* `<textarea>` → Multi-line input.
+* `<fieldset>` → Groups elements.
+* `<legend>` → Caption for fieldset.
+* `<datalist>` → Pre-defined options.
+* `<output>` → Shows result of a calculation.
+
+---
+
+### Common **Input Types**
+
+* `text` → One-line input.
+* `password` → Hidden characters.
+* `email` → Validates email.
+* `number` → Numeric input (with min/max/step).
+* `radio` → Single choice from group.
+* `checkbox` → Multiple selections.
+* `date` / `time` → Calendar/time picker.
+* `file` → File upload.
+* `submit` → Submits form.
+* `reset` → Resets fields.
+
+---
+
+✅ **Tip for Exams/Interviews**:
+
+* `action + method` = most important attributes.
+* Know difference between `get` vs `post`.
+* Remember `<fieldset>` & `<legend>` group form fields.
+* File upload → requires `enctype="multipart/form-data"`.
+
+
+---------------------
+e)HTML Lists:-
+
+Here’s a concise **revision-friendly note** for HTML Lists based on the content you provided:
+
+---
+
+# **HTML Lists – Revision Notes**
+
+### **Definition:**
+
+HTML Lists organize data on web pages into structured, readable formats. They make content visually appealing and are essential in web development.
+
+---
+
+## **Types of HTML Lists:**
+
+| Type                 | Tag    | Description                                                            |
+| -------------------- | ------ | ---------------------------------------------------------------------- |
+| **Unordered List**   | `<ul>` | Items without order; marked with bullets.                              |
+| **Ordered List**     | `<ol>` | Items with specific sequence; numbered or lettered.                    |
+| **Description List** | `<dl>` | Terms with descriptions; uses `<dt>` for term, `<dd>` for description. |
+
+---
+
+## **List Items Tag:**
+
+* `<li>` – defines a list item (used inside `<ul>` or `<ol>`).
+
+---
+
+## **Unordered List `<ul>`:**
+
+* Syntax:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+```
+
+* **Attributes:**
+
+  * `compact` → smaller rendering (obsolete, use CSS).
+  * `type` → specifies bullet style (circle, square, disc).
+
+---
+
+## **Ordered List `<ol>`:**
+
+* Syntax:
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+```
+
+* **Attributes:**
+
+  * `type` → numbering type (`1`, `A`, `a`, `I`, `i`).
+  * `start` → starting number/letter.
+  * `reversed` → numbers in descending order.
+  * `compact` → smaller rendering (obsolete).
+
+---
+
+## **Description List `<dl>`:**
+
+* Syntax:
+
+```html
+<dl>
+  <dt>Term 1</dt>
+  <dd>Description 1</dd>
+  <dt>Term 2</dt>
+  <dd>Description 2</dd>
+</dl>
+```
+
+* `<dt>` → term name.
+* `<dd>` → term description.
+
+---
+
+## **Best Practices:**
+
+1. Use the correct type of list for semantic accuracy.
+2. Nest lists when needed (UL inside OL or vice versa).
+3. Style lists with CSS (bullet style, numbering, indentation).
+4. Ensure accessibility for screen readers.
+
+------------------
+F)HTML Tables:-
+
+Here’s a **concise revision-friendly note for HTML Tables**:
+
+---
+
+## **HTML Tables – Revision Notes**
+
+### **1. Basic Structure**
+
+* `<table>` → defines the table.
+* `<tr>` → table row.
+* `<th>` → table header (bold, centered by default).
+* `<td>` → table data (cell content).
+* **Example:**
+
+```html
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Priya</td>
+    <td>Sharma</td>
+    <td>24</td>
+  </tr>
+</table>
+```
+
+---
+
+### **2. HTML Table Tags**
+
+| Tag          | Description                  |
+| ------------ | ---------------------------- |
+| `<table>`    | Creates a table              |
+| `<tr>`       | Defines a row                |
+| `<th>`       | Header cell                  |
+| `<td>`       | Data cell                    |
+| `<caption>`  | Table title                  |
+| `<thead>`    | Table header section         |
+| `<tbody>`    | Main content section         |
+| `<tfoot>`    | Footer section               |
+| `<col>`      | Attributes for columns       |
+| `<colgroup>` | Group columns for formatting |
+
+---
+
+### **3. Styling Tables (CSS)**
+
+1. **Borders**
+
+```css
+table, th, td { border: 1px solid black; }
+```
+
+2. **Collapsed Borders**
+
+```css
+table, th, td { border: 1px solid black; border-collapse: collapse; }
+```
+
+3. **Cell Padding**
+
+```css
+th, td { padding: 20px; }
+```
+
+4. **Text Alignment**
+
+```css
+th { text-align: left; }
+```
+
+5. **Border Spacing**
+
+```css
+table { border-spacing: 5px; }
+```
+
+6. **Background Color**
+
+```css
+table#t01 { background-color: #f2f2d1; }
+```
+
+---
+
+### **4. Span Cells**
+
+* **Colspan:** Merge multiple columns
+
+```html
+<th colspan="2">Telephone</th>
+```
+
+* **Rowspan:** Merge multiple rows
+
+```html
+<th rowspan="2">Telephone</th>
+```
+
+---
+
+### **5. Captions**
+
+* Add table title:
+
+```html
+<caption>DETAILS</caption>
+```
+
+---
+
+### **6. Nested Tables**
+
+* A table inside another table:
+
+```html
+<table>
+  <tr>
+    <td>Outer Table</td>
+    <td>
+      <table>
+        <tr><td>Inner Table Row1</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
+---
+
+G)HTML Attributes:-
+
+Here’s a **concise revision-friendly note for HTML Attributes**:
+
+---
+
+## **HTML Attributes – Revision Notes**
+
+### **1. Definition**
+
+* Special words within an opening tag that define additional info about an element.
+* Syntax:
+
+```html
+<tagname attribute_name="attribute_value">content</tagname>
+```
+
+* Example:
+
+```html
+<img src="image.png" alt="Logo">
+```
+
+* **Components:**
+
+  1. **attribute_name** → name of property (e.g., src, href, id)
+  2. **attribute_value** → value assigned to attribute, always in quotes.
+
+---
+
+### **2. Types of Attributes**
+
+**A. Global Attributes** (usable on any element):
+
+| Attribute       | Purpose                                  |
+| --------------- | ---------------------------------------- |
+| id              | Unique identifier for CSS/JS targeting   |
+| class           | Group elements for styling               |
+| style           | Inline CSS styling                       |
+| title           | Tooltip text on hover                    |
+| lang            | Language of element content              |
+| tabindex        | Keyboard navigation order                |
+| role            | Accessibility role                       |
+| contenteditable | Editable content                         |
+| href            | Link destination (for `<a>` element)     |
+| src             | Resource location (images, video, audio) |
+| alt             | Alternative text for images              |
+
+**B. Other Types**
+
+* Event attributes → handle events like onclick, onmouseover.
+* Input attributes → specific to `<input>` inside `<form>`.
+* Image attributes → specific to `<img>`.
+* Link attributes → specific to `<a>` and `<link>`.
+* Table attributes → `<table>`, `<tr>`, `<th>`, `<td>`.
+* Media attributes → `<audio>`, `<video>`.
+* Accessibility attributes → `alt`, `aria-*`.
+* Meta attributes → `<meta>` like charset, viewport.
+
+---
+
+### **3. Common HTML Attributes Examples**
+
+1. **alt** → alternative text for images:
+
+```html
+<img src="image.png" alt="Logo">
+```
+
+2. **width & height** → set image dimensions:
+
+```html
+<img src="image.png" width="300" height="100">
+```
+
+3. **id** → unique identifier:
+
+```html
+<h1 id="header">Hello</h1>
+```
+
+4. **title** → tooltip text:
+
+```html
+<h3 title="Hello GeeksforGeeks">Hover here</h3>
+```
+
+5. **href** → hyperlink destination:
+
+```html
+<a href="https://example.com" target="_blank">Visit</a>
+```
+
+6. **style** → inline CSS styling:
+
+```html
+<h2 style="color:#8CCEF9; text-align:center;">Hello</h2>
+```
+
+7. **lang** → language declaration:
+
+```html
+<p lang="en">Text in English</p>
+<p lang="fr">Texte en français</p>
+```
+
+---
+
+### **4. Important Points**
+
+1. **Lowercase Attributes** → Recommended (W3C).
+2. **Quote Attribute Values** → Always use quotes `" "` for consistency.
+3. **Quotes Inside Values** → Use single quotes if value has double quotes:
+
+```html
+<input placeholder='Enter "username" here'>
+```
+
+4. **Boolean Attributes** → Write without value:
+
+```html
+<input type="checkbox" checked>
+```
+
+5. **Attribute Order (Readability)** → Common order: id → class → global → specific → event
+
+```html
+<button id="btn1" class="btn" type="submit" onclick="handleClick()">Submit</button>
+```
+
+6. **Avoid Deprecated Attributes** → e.g., `align`, `bgcolor`, `border`. Use CSS instead.
+
+---
+
+This covers **all essential HTML attribute concepts** for **quick revision**.
+
+If you want, I can combine **HTML Tables + Attributes** into a **super condensed one-page revision sheet** for faster memorization. Do you want me to do that?
