@@ -930,3 +930,85 @@ If you want, I can combine **HTML Tables + Attributes** into a **super condensed
 
 * SVG = scalable, XML, resolution independent, supports events.
 * Canvas = pixel-based, faster for dynamic rendering, resolution dependent.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#HTML APIs:-
+
+**HTML Geolocation – Quick Revision Notes**
+
+🔹 **Definition**:
+
+* Used to get the **geographical position** (latitude & longitude) of a user.
+* Requires **user permission** due to privacy.
+* Implemented with **JavaScript**.
+
+---
+
+### **Syntax**
+
+```js
+navigator.geolocation
+```
+
+---
+
+### **Location Properties (pos.coords)**
+
+* `latitude` → decimal latitude
+* `longitude` → decimal longitude
+* `accuracy` → accuracy of position
+* `altitude` → meters above sea level (if available)
+* `altitudeAccuracy` → accuracy of altitude (if available)
+* `heading` → direction (degrees clockwise from North)
+* `speed` → speed in m/s (if available)
+* `timestamp` → time of position response
+
+---
+
+### **Geolocation Methods**
+
+* `getCurrentPosition()` → fetches current location
+* `watchPosition()` → tracks location changes (continuous updates)
+* `clearWatch()` → stops `watchPosition`
+
+---
+
+### **Error Handling**
+
+Errors are handled with `errHand` function.
+**PositionError Codes**:
+
+* `PERMISSION_DENIED` → user blocked location access
+* `POSITION_UNAVAILABLE` → device can’t determine location
+* `TIMEOUT` → request took too long
+* `UNKNOWN_ERROR` → other errors
+
+---
+
+### **Examples**
+
+1. **Basic location fetch**
+
+```js
+navigator.geolocation.getCurrentPosition(showLoc, errHand);
+```
+
+2. **Display on page**
+
+```js
+function showLoc(pos) {
+  document.getElementById("demo").innerHTML =
+    "Lat: " + pos.coords.latitude + 
+    " Long: " + pos.coords.longitude;
+}
+```
+
+3. **Show on Google Map**
+
+* Use Google Maps API with `LatLng` object and `Marker`.
+
+---
+
+### **Supported Browsers**
+
+* Chrome 5+, Edge 12+, Firefox 3.5+, Opera 10.6+, Safari 5+
