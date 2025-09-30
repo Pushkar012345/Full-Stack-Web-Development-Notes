@@ -1012,3 +1012,369 @@ function showLoc(pos) {
 ### **Supported Browsers**
 
 * Chrome 5+, Edge 12+, Firefox 3.5+, Opera 10.6+, Safari 5+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+#HTML DOM:-
+
+Here’s a **short & precise revision note** on **HTML DOM** from that long explanation 👇
+
+---
+
+### **HTML DOM (Document Object Model) – Quick Revision**
+
+* **Definition**: A tree-like structure of an HTML document where each tag, attribute, and text is a **node**.
+* **Purpose**: Acts as a bridge between HTML and JavaScript → enables interactivity.
+* **Structure**:
+
+  * Root: `<html>`
+  * Branches: `<head>`, `<body>`
+  * Leaves: elements, attributes, text
+
+---
+
+### **Why DOM is Needed?**
+
+* Dynamic updates (change content without reload).
+* Handle user interaction (clicks, inputs).
+* Add/remove elements/styles at runtime.
+* Works across all browsers (standard API).
+
+---
+
+### **Key Properties**
+
+* **Node-based** → everything is a node.
+* **Hierarchical** → parent-child tree.
+* **Live** → changes reflect instantly.
+* **Cross-platform** → works in all browsers.
+
+---
+
+### **Types of DOM**
+
+* **Core DOM** → for all documents.
+* **XML DOM** → for XML docs.
+* **HTML DOM** → for HTML docs.
+
+---
+
+### **Important Objects**
+
+* **Document** → entry point to the DOM tree.
+* **Window (BOM)** → represents browser window, contains `document`.
+* **Interfaces** → define methods for specific elements (e.g., `HTMLTableElement`).
+
+---
+
+### **Common DOM Methods**
+
+* `getElementById(id)`
+* `getElementsByClassName(class)`
+* `querySelector(selector)` / `querySelectorAll(selector)`
+* `createElement(tag)`
+* `appendChild(node)` / `remove()`
+* `addEventListener(event, fn)`
+
+---
+
+### **Example**
+
+```html
+<p id="intro">Hello DOM</p>
+<script>
+  document.getElementById("intro").innerHTML = "Updated Text";
+</script>
+```
+
+👉 Changes paragraph content dynamically.
+
+---
+
+### **In JavaScript**
+
+DOM = JavaScript’s way to **access & manipulate** HTML structure:
+
+* Access → `document.getElementById("id")`
+* Modify → `.innerHTML`, `.style`
+* Events → `.addEventListener("click", fn)`
+
+---
+
+✅ **Conclusion**: DOM = backbone of dynamic web apps; essential for interactivity, responsiveness, and modern front-end dev.
+
+---
+
+Do you want me to make similar **short revision notes** for *HTML Audio/Video, HTML5, and MathML* also (like this style)?
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+#HTML Audio/video:-
+
+Here’s a **short and precise revision note** for **HTML DOM Audio/Video**:
+
+---
+
+### **HTML DOM Audio/Video – Quick Revision**
+
+**Definition:**
+
+* HTML DOM provides **properties and methods** to control `<audio>` and `<video>` elements programmatically.
+* Allows **play, pause, stop, volume adjustment**, and dynamic interactions with media.
+
+---
+
+### **HTML Tags**
+
+* `<audio>` → embeds audio files.
+* `<video>` → embeds video files.
+* Attributes: `controls`, `autoplay`, `loop`, `muted`, `width`, `height`.
+
+**Example:**
+
+```html
+<audio controls>
+    <source src="audiofile.mp3" type="audio/mpeg">
+</audio>
+
+<video width="320" height="240" controls>
+    <source src="videofile.mp4" type="video/mp4">
+</video>
+```
+
+---
+
+### **DOM Methods & Properties**
+
+* `.play()` → starts playback
+* `.pause()` → pauses playback
+* `.currentTime` → get/set current playback time
+* `.volume` → get/set volume (0.0 to 1.0)
+* `.duration` → total duration of media
+* `.paused` → checks if media is paused
+
+---
+
+### **Best Practices**
+
+1. **Use Multiple Formats** → MP4, WebM, Ogg for browser compatibility.
+2. **Fallback Content** → add text or links for unsupported browsers.
+3. **Custom Controls** → use JavaScript to enhance accessibility and UX.
+4. **Optimize File Sizes** → compress media for faster loading without quality loss.
+
+---
+
+✅ **Summary:**
+HTML DOM Audio/Video allows **dynamic control** of media elements, improving **interactivity and user experience**.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#HTML-05
+
+Here’s a **short and precise revision note** for **HTML5 – Quick Revision**:
+
+---
+
+### **HTML5 – Quick Revision**
+
+**Definition:**
+
+* Fifth version of HTML, standard language to structure webpages.
+* Improves **semantics, multimedia, performance, and interactivity**.
+
+---
+
+### **Key Features**
+
+1. **Semantic Elements:** `<header>`, `<footer>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<nav>`, `<mark>`, `<details>`, `<summary>`
+2. **Multimedia Support:** `<audio>`, `<video>` without plugins
+3. **Canvas & SVG:** `<canvas>` for graphics, `<svg>` for vector images
+4. **Web Storage:** `localStorage` and `sessionStorage` for offline data
+5. **APIs:** Geolocation, Web Workers, WebSockets, Drag & Drop
+6. **Form Enhancements:** New input types (`date`, `email`, `number`) and validation
+7. **Progress/Output Elements:** `<progress>`, `<output>`
+
+---
+
+### **Example**
+
+**Video Embed:**
+
+```html
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+```
+
+**Canvas Drawing:**
+
+```html
+<canvas id="myCanvas" width="200" height="200"></canvas>
+<script>
+  var ctx = document.getElementById("myCanvas").getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(50, 50, 100, 100);
+</script>
+```
+
+---
+
+### **Advantages**
+
+* Native multimedia support
+* Faster performance & mobile-friendly
+* Cleaner, semantic code
+* Offline capability with Web Storage
+* Cross-platform & responsive
+
+---
+
+### **Disadvantages**
+
+* Older browsers may lack support
+* Some mobile devices may not support advanced features
+* Security risks with storage and APIs
+* Complexity for beginners (WebSockets, Canvas, etc.)
+
+---
+
+### **Deprecated Elements**
+
+| Removed     | Use Instead         |
+| ----------- | ------------------- |
+| `<acronym>` | `<abbr>`            |
+| `<applet>`  | `<object>`          |
+| `<center>`  | CSS                 |
+| `<font>`    | CSS                 |
+| `<big>`     | CSS                 |
+| `<strike>`  | CSS, `<s>`, `<del>` |
+
+---
+
+### **Best Practices**
+
+* Use **semantic tags** for SEO & accessibility
+* Ensure **cross-browser compatibility**
+* Always include `<meta charset="UTF-8">`
+* Use `<meta name="viewport">` for mobile responsiveness
+
+---
+
+✅ **Summary:**
+HTML5 = modern, semantic, multimedia-ready, mobile-optimized HTML. Essential for interactive and responsive web development.
+
+-----------
+#HTML 5 Math HTML:-
+Here’s a **short and precise revision note** for **HTML5 MathML**:
+
+---
+
+### **HTML5 MathML – Quick Revision**
+
+**Definition:**
+
+* MathML = **Mathematical Markup Language**, XML-based.
+* Used to **display mathematical expressions** on web pages.
+* Integrated into HTML5 → no plugins or images needed.
+
+---
+
+### **Importance**
+
+* Makes math content **accessible and readable**.
+* Works across **devices and assistive technologies**.
+* Structured & semantic representation of math.
+
+---
+
+### **Key Elements**
+
+| Tag            | Purpose                         |
+| -------------- | ------------------------------- |
+| `<math>`       | Root element for MathML content |
+| `<mfrac>`      | Fraction                        |
+| `<mn>`         | Number                          |
+| `<mi>`         | Identifier (variables, symbols) |
+| `<mo>`         | Operator (+, −, =, etc.)        |
+| `<msup>`       | Superscript (power)             |
+| `<msub>`       | Subscript                       |
+| `<msubsup>`    | Subscript + superscript         |
+| `<mrow>`       | Group elements in a row         |
+| `<msqrt>`      | Square root                     |
+| `<mroot>`      | N-th root                       |
+| `<mtable>`     | Table/matrix container          |
+| `<mtr>`        | Table row                       |
+| `<mtd>`        | Table cell                      |
+| `<mtext>`      | Text within math                |
+| `<munder>`     | Accent/limit under expression   |
+| `<mover>`      | Accent/limit over expression    |
+| `<munderover>` | Accent/limit under + over       |
+| `<semantics>`  | Semantic markup for math        |
+
+---
+
+### **Examples**
+
+**Fraction:**
+
+```html
+<math xmlns="https://www.w3.org/1998/Math/MathML/">
+  <mfrac><mn>1</mn><mn>2</mn></mfrac>
+</math>
+```
+
+**Pythagoras Theorem:**
+
+```html
+<math xmlns="https://www.w3.org/1998/Math/MathML/">
+  <mrow>
+    <msup><mi>a</mi><mn>2</mn></msup>
+    <mo>+</mo>
+    <msup><mi>b</mi><mn>2</mn></msup>
+    <mo>=</mo>
+    <msup><mi>c</mi><mn>2</mn></msup>
+  </mrow>
+</math>
+```
+
+**Chemical Reaction:**
+
+```html
+<math xmlns="https://www.w3.org/1998/Math/MathML/">
+  <mrow>
+    <msub><mtext>Zn</mtext></msub>
+    <mo>+</mo>
+    <msub><mrow><mtext>CuSO</mtext><mn>4</mn></mrow></msub>
+    <mo>&#x2192;</mo>
+    <msub><mrow><mtext>ZnSO</mtext><mn>4</mn></mrow></msub>
+    <mo>+</mo>
+    <msub><mtext>Cu</mtext></msub>
+  </mrow>
+</math>
+```
+
+---
+
+### **Limitations**
+
+* Only **displays** math, does not calculate.
+* Not a programming language.
+
+---
+
+### **Capabilities**
+
+* Represent **matrices**, **equations**, **chemical reactions**.
+* Semantic, structured, compatible with assistive tech.
+
+---
+
+### **Best Practices**
+
+* Always wrap math content in `<math>`.
+* Validate code using **W3C MathML Validator**.
+
+---
+
+✅ **Summary:**
+MathML in HTML5 = **standardized way to display math** on webpages, improves accessibility and semantic clarity.
+
+-----------------
